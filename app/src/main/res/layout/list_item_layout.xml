@@ -1,0 +1,80 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DCC9C9"
+    app:ignore="NamespaceTypo"
+    android:id="@+id/cardview"
+    card_view:cardBackgroundColor="#E6E6E6"
+    card_view:cardCornerRadius="16dp"
+    android:layout_marginTop="16dp"
+   >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:paddingLeft="8dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="1dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#675757" />
+        <LinearLayout
+            android:paddingLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ali Raza"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/age"
+                    android:text="age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:paddingLeft="16dp"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:background="#FFC107"
+                    />
+                <TextView
+                    android:paddingLeft="4dp"
+                    android:id="@+id/rollno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rollno"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/phoneno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
